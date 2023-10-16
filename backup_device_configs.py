@@ -20,7 +20,7 @@ nr = InitNornir(config_file="config.yaml")
 
 
 result = nr.run(
-    name="Creating Backup Archive", task=backup_device_configs
+    name="Backing up device configurations", task=backup_device_configs
 )
 
 print_result(result)
