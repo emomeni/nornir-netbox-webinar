@@ -9,7 +9,7 @@ The talk showed how to get started on your Network Automation journey with Norni
 1. Clone Git repo and change into nornir-netbox-webinar directory
 ```
 git clone https://github.com/netboxlabs/nornir-netbox-webinar.git
-cd nornir-netbox/
+cd nornir-netbox-webinar
 ```
 2. Create and activate Python 3 virtual environment
 ```
