@@ -20,7 +20,6 @@ def backup_device_configs(task):
 
 nr = InitNornir(config_file="config.yaml")
 
-
 result = nr.run(
     name="Backing up device configurations", task=backup_device_configs
 )

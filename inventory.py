@@ -3,14 +3,7 @@
 from nornir import InitNornir
 import json
 
-nr = InitNornir(
-    inventory={
-        "plugin":"NetBoxInventory2",
-        "options": {
-            "ssl_verify": False,
-        }
-    }
-)
+nr = InitNornir(config_file="config.yaml")
 
 for host in nr.inventory.hosts.values():
     host_data = host.dict()
