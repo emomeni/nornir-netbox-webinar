@@ -20,7 +20,7 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-4 Set environment variables for the NetBox API token and URL
+4. Set environment variables for the NetBox API token and URL
 ```
 export NB_URL=<YOUR_NETBOX_URL>
 export NB_TOKEN=<YOUR_NETBOX_API_TOKEN>
