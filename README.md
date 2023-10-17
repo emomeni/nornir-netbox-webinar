@@ -22,6 +22,6 @@ pip install -r requirements.txt
 ```
 4. Set environment variables for the NetBox API token and URL
 ```
-export NB_URL=<YOUR_NETBOX_URL>
+export NB_URL=<YOUR_NETBOX_URL> (note - must include http:// or https://) 
 export NB_TOKEN=<YOUR_NETBOX_API_TOKEN>
 ```
