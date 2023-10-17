@@ -1,3 +1,5 @@
+#!./venv/bin/python
+
 from nornir import InitNornir
 from nornir_napalm .plugins.tasks import  napalm_get
 from nornir_utils.plugins.functions import print_result
@@ -8,10 +10,10 @@ import pathlib
 def backup_device_configs(task):
     backup_directory = "backups"
     pathlib.Path(backup_directory).mkdir(exist_ok=True)
-    r = task.run(task=napalm_get, getters=["get_config"])
+    r = task.run(task=napalm_get, getters=["config"])
     task.run(
         task=write_file,
-        content=r.result["get_config"]["running"],
+        content=r.result["config"]["running"],
         filename=f"" + str(backup_directory) + "/" + str(task.host.name) + str(date.today()) + ".cfg",
     )
 

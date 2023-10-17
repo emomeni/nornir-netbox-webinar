@@ -1,3 +1,5 @@
+#!./venv/bin/python
+
 from nornir import InitNornir
 import json
 
